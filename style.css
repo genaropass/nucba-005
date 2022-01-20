@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(23, 12, 94);
+    font-weight: 600;
+}
+
+body{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #f8f8e3 100%);
+}
+
+.container-tarjeta{
+    width: 800px;
+    height: 440px;
+    border: 18px solid rgba(255, 255, 255, 0.794);
+    border-radius: 20px;
+    background:linear-gradient(-225deg, #ebfffa 0%, rgb(255, 237, 253) 100%);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    filter:drop-shadow(0 8px 8px rgba(0, 0, 0, 0.356));
+}
+
+.tarjetas{
+    display: flex;
+    width: 100%;
+    margin:70px;
+    flex-direction: row;
+}
+
+.free, .standar, .premium{
+   margin-right: 50px;
+   margin-left: 0;
+}
+
+.tarjetas h1{
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.tarjetas span{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.tarjetas h3{
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjetas p{
+    font-size: 15px;
+}
+
+.standar p{
+    margin-bottom: 17px;
+}
+
+.boton1, .boton2, .boton3{
+    vertical-align: middle;
+    margin-top: 70px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white; 
+    font-weight: 400; 
+    font-size: 14px;
+}
+
+.boton1{
+    background-color: rgb(236, 63, 236);
+    color: black;
+}
+
+.boton2{
+    background-color: rgb(35, 210, 233);
+    color: black;
+}
+
+.boton1:hover, .boton2:hover, .boton3:hover{
+    filter:drop-shadow(0 8px 8px rgba(0, 0, 0, 0.356));
+    color: white;
+    font-weight: 600;
+    padding: 25px;
+    font-size: 18px;
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 682px) and (max-width: 767px){
+    .container-tarjeta{
+        width: 85%;
+        margin: 0;
+    }
+    .tarjetas{
+        width: 80%;
+    }
+}
+
+/* Celulares */
+@media only screen and (max-width: 681px){
+
+    .container-tarjeta{
+        width: 300px;
+        height: 1100px;
+    }
+
+    .tarjetas{
+        display: flex;
+        width: 100%;
+        margin:70px;
+        flex-direction: column;
+    }
+
+    .boton1, .boton2, .boton3{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 20px;
+        font-weight: 400; 
+        font-size: 14px;
+    }
+    
+}
